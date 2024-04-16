@@ -60,6 +60,7 @@ class DataType
      * Surrounded with double quotes
      * A string is a non-primitive data type
      */
+    private String fullName = "Tumsifu Praygod lema";
 
     public static void main(String[] args){
         DataType data = new DataType();
@@ -73,7 +74,20 @@ class DataType
         System.out.println(data.hasStudentPass);
         System.out.println("You have scored " + data.grade + " in your examinations");
         System.out.println(data.ascii);
+        System.out.println("My name is " + data.fullName);
     } 
 
 
 }
+
+/**
+ * Difference between non-primitive data type and primitive
+ * 1. Primitive are predefined (already defined) in java. Non primitive are created by programmer
+ * and is not defined except for strings
+ *
+ * 2. Non-primitive types can be used to call methods to perform certain operations, while primitive can't.
+ * 3. A primitive has always a value, while non-primitive can be null.
+ * 4. Primitive starts with lowercase letter while non-primitive starts with uppercase.
+ * 5. Size of primitive type depends on data type, while non-primitive types have all the same size.
+ * The non primitive data types are Strings, Arrays, Classes, Interface.
+ */
