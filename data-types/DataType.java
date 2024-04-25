@@ -13,6 +13,20 @@
  * char - 2 bytes stores character letter or ASCII values
  */
 
+/**
+ * Reference data types - these are data types that are not the primitive ones
+ * They include Classes, functions and Arrays
+ * Initializing this datatype requires import from other packages
+ * 
+ * when declaring a reference data type we use the new keyword
+ * this in turn allocates a memory space
+ * this is different from primitive data type as the memory space is allocated by java runtime enironment
+ */
+
+// Importing a Date package
+
+import java.util.Date;
+
 class DataType
 {
     // note that we can use types such as byte if we are sure it doess not exceed the limit
@@ -61,6 +75,9 @@ class DataType
      * A string is a non-primitive data type
      */
     private String fullName = "Tumsifu Praygod lema";
+    /** We can also use _ to separate large numbers just like separate numbers with comma */
+
+    private int longNumber = 123_456_892;
 
     public static void main(String[] args){
         DataType data = new DataType();
@@ -75,6 +92,11 @@ class DataType
         System.out.println("You have scored " + data.grade + " in your examinations");
         System.out.println(data.ascii);
         System.out.println("My name is " + data.fullName);
+        System.out.println("A very long interger " + data.longNumber);
+
+        // referencing data types
+
+        Date now = new Date();
     } 
 
 
